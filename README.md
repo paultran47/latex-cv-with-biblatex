@@ -1,6 +1,6 @@
 # LaTeX CV with Biblatex
 
-[MIT Licensed](https://github.com/PaulTran47/CV/blob/master/LICENCE.md).
+[MIT Licensed](https://github.com/paultran47/CV/blob/master/LICENCE.md).
 
 <details>
   <summary>Table of contents</summary>
@@ -34,7 +34,7 @@ and maintenance of my CV is a natural move.
 ### Reporting vulnerabilities
 
 If you discover a vulnerability/error/mistake in the production code of my
-website, please [refer to the instructions found in SECURITY.md](https://github.com/PaulTran47/latex-cv-with-biblatex/blob/gh-pages/SECURITY.md)
+website, please [refer to the instructions found in SECURITY.md](https://github.com/paultran47/latex-cv-with-biblatex/blob/gh-pages/SECURITY.md)
 for instructions on reporting these issues. I will then address the problem as
 soon as possible.
 
