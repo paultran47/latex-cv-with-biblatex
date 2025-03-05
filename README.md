@@ -13,6 +13,7 @@
       </ul>
     </li>
     <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ul>
 </details>
 
@@ -87,6 +88,20 @@ descending order, and sorted by name within each year.
 
 <p align="right">
   (<a href="#latex-cv-with-biblatex">back to top.</a>)
+</p>
+
+---
+
+## Acknowledgements
+
+Below are the awesome resources used to make this GitHub Page as optimised as possible:
+
+* [Anatal Broder's Jekyll layout](https://github.com/penibelst/jekyll-compress-html)
+that compresses HTML in pure Liquid
+* [James Steinbach's guide to optimising Jekyll GitHub Pages](https://jdsteinbach.com/performance/99-100-google-page-speed/)
+
+<p align="right">
+  (<a href="#economics-phd-app-deadlines">back to top.</a>)
 </p>
 
 ---
