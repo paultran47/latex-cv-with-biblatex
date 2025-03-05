@@ -9,5 +9,5 @@ possibility that I have made coding mistakes somewhere along the way that causes
 my website to disclose vulnerabilities (e.g., through the Ruby configuration).
 
 In the event that a vulnerability/error/mistake has been discovered about my
-website, please [submit an issue to the GitHub repo](https://github.com/PaulTran47/latex-cv-with-biblatex/issues).
+website, please [submit an issue to the GitHub repo](https://github.com/paultran47/latex-cv-with-biblatex/issues).
 I will then address the problem as soon as possible.
