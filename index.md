@@ -1,25 +1,43 @@
 ---
-layout: default
+layout: compress
 ---
 
-## Overview
+# Overview
 
-The journey of a researcher is a long one; every researcher will accumulate an abundance of research qualifications, publications, presentations, awards, and teaching experience over time. As a result, a curriculum vitae (CV for short) is an absolute necessity for job applications and annual performance reviews in the academic, public, or private sectors, as well as just keeping track of publications.
+The journey of a researcher is a long one; every researcher will accumulate an
+abundance of research qualifications, publications, presentations, awards, and
+teaching experience over time. As a result, a curriculum vitae (CV for short) is
+an absolute necessity for job applications and annual performance reviews in the
+academic, public, or private sectors, as well as just keeping track of publications.
 
-In the academic world, LaTeX is the standard formatting language and for good reason: LaTeX makes formatting easy for maintenance and quick updates. It's for this very reason that I've created a CV entirely in LaTeX. To further tailor this for academics, the CV has integration with the awesome [biblatex package](https://ctan.org/pkg/biblatex) to easily update and maintain publications of all kinds.
+In the academic world, LaTeX is the standard formatting language and for good
+reason: LaTeX makes formatting easy for maintenance and quick updates. It's for
+this very reason that I've created a CV entirely in LaTeX. To further tailor
+this for academics, the CV has integration with the awesome[biblatex package](https://ctan.org/pkg/biblatex)
+to easily update and maintain publications of all kinds.
 
 ## Prerequisites
 
-To work with the source code and tailor this CV for your own needs, you will need the following installed:
+To work with the source code and tailor this CV for your own needs, you will
+need the following installed:
 
 * Latest version of MikTeX or TeXLive.
-* The following LaTeX packages: [newtxttext](https://ctan.org/pkg/newtx), [fontenc](https://ctan.org/pkg/fontenc), [geometry](https://ctan.org/pkg/geometry), [ragged2e](https://ctan.org/pkg/ragged2e), [fancyhdr](https://ctan.org/pkg/fancyhdr), [xcolor](https://ctan.org/pkg/xcolor), [url](https://ctan.org/pkg/url), [hyperref](https://ctan.org/pkg/hyperref), [booktabs](https://ctan.org/pkg/booktabs), [fmtcount](https://ctan.org/pkg/fmtcount), [refcount](https://ctan.org/pkg/refcount), [datetime](https://ctan.org/pkg/datetime), [titlesec](https://ctan.org/pkg/titlesec), [lastpage](https://ctan.org/pkg/lastpage), [paralist](https://ctan.org/pkg/paralist), [enumitem](https://ctan.org/pkg/enumitem), [array](https://ctan.org/pkg/array), and [biblatex](https://ctan.org/pkg/biblatex).
+* The following LaTeX packages: [newtxttext](https://ctan.org/pkg/newtx), [fontenc](https://ctan.org/pkg/fontenc),
+[geometry](https://ctan.org/pkg/geometry), [ragged2e](https://ctan.org/pkg/ragged2e),
+[fancyhdr](https://ctan.org/pkg/fancyhdr), [xcolor](https://ctan.org/pkg/xcolor),
+[url](https://ctan.org/pkg/url), [hyperref](https://ctan.org/pkg/hyperref),
+[booktabs](https://ctan.org/pkg/booktabs), [fmtcount](https://ctan.org/pkg/fmtcount),
+[refcount](https://ctan.org/pkg/refcount), [datetime](https://ctan.org/pkg/datetime),
+[titlesec](https://ctan.org/pkg/titlesec), [lastpage](https://ctan.org/pkg/lastpage),
+[paralist](https://ctan.org/pkg/paralist), [enumitem](https://ctan.org/pkg/enumitem),
+[array](https://ctan.org/pkg/array), and [biblatex](https://ctan.org/pkg/biblatex).
 
 ## Details
 
 ### Preamble
 
-Before the actual CV document is rendered, your preamble (in the .tex file) should look similar to the following (don't mind the comments):
+Before the actual CV document is rendered, your preamble (in the .tex file)
+should look similar to the following (don't mind the comments):
 
 ```latex
 \documentclass[a4paper, 10pt]{article}
@@ -67,8 +85,16 @@ Before the actual CV document is rendered, your preamble (in the .tex file) shou
 
 * The packages installed are all listed in the .sty file.
 * Your name should be placed in the `\name` command.
-* Relevant contact information should be placed into the `\info` command. The argument is essentially a long string structured as a tabular environment with two columns, but feel free to remove or add custom rows and columns to suit your needs.
-* The final section of your preamble should be for bibliographies. You should declare each .bib file in their individual `\addbibresource` commands (using my CV as an example, I have two .bib files for working papers and works-in-progress). The `\addtocategory` command allows you to specify what BibTeX entry types you want to both count in your total publications and display in the CV itself. You can find out more about all the [standard entry types here](https://www.bibtex.com/e/entry-types/).
+* Relevant contact information should be placed into the `\info` command. The
+argument is essentially a long string structured as a tabular environment with
+two columns, but feel free to remove or add custom rows and columns to suit your
+needs.
+* The final section of your preamble should be for bibliographies. You should
+declare each .bib file in their individual `\addbibresource` commands (using my
+CV as an example, I have two .bib files for working papers and works-in-progress).
+The `\addtocategory` command allows you to specify what BibTeX entry types you
+want to both count in your total publications and display in the CV itself. You
+can find out more about all the [standard entry types here](https://www.bibtex.com/e/entry-types/).
   * The .sty file currently has the following pre-defined categories:
 
     | label       | Category                         |
@@ -84,7 +110,10 @@ Before the actual CV document is rendered, your preamble (in the .tex file) shou
     | wps         | Working papers                   |
     | wips        | Works in progress                |
 
-  * You can also create customised categories if you find the aforementioned categories not suitable. For example, if you have published software packages and wish to a specific category for those contributions, simply add the following into the .sty file
+  * You can also create customised categories if you find the aforementioned
+  categories not suitable. For example, if you have published software packages
+  and wish to a specific category for those contributions, simply add the
+  following into the .sty file
 
   ```latex
   \makebibcategory{software}{Published software packages}
@@ -92,7 +121,8 @@ Before the actual CV document is rendered, your preamble (in the .tex file) shou
 
 ### Document
 
-After the preamble, your .tex file should look like this (again using my own CV as an example):
+After the preamble, your .tex file should look like this (again using my own CV
+as an example):
 
 ```latex
 \begin{document}
@@ -240,8 +270,16 @@ After the preamble, your .tex file should look like this (again using my own CV 
 
 ## Download
 
-Feel free to take a look at the [.tex file here](https://raw.githubusercontent.com/paultran47/latex-cv-with-biblatex/master/tran_paul_le_cv.tex), the [.sty file here](https://raw.githubusercontent.com/paultran47/latex-cv-with-biblatex/master/tran_paul_le_cv.sty), my [personal CV](https://drive.google.com/file/d/1P3rTeJtPRlIMhha3hauKHkdX2BGse3ht/view) as an example, and the [GitHub repo](https://github.com/paultran47/latex-cv-with-biblatex) for the source code (also found by the buttons at the top of this website).
+Feel free to take a look at the [.tex file here](https://raw.githubusercontent.com/paultran47/latex-cv-with-biblatex/master/tran_paul_le_cv.tex),
+the [.sty file here](https://raw.githubusercontent.com/paultran47/latex-cv-with-biblatex/master/tran_paul_le_cv.sty),
+my [personal CV](https://drive.google.com/file/d/1P3rTeJtPRlIMhha3hauKHkdX2BGse3ht/view)
+as an example, and the [GitHub repo](https://github.com/paultran47/latex-cv-with-biblatex)
+for the source code (also found by the buttons at the top of this website).
 
 ## Closing note
 
-If you want to find out more about me and my research, please visit my [personal website](https://paulletran.com). You can also find my research on [my Google Scholar profile](https://scholar.google.com/citations?user=0zKxrWgAAAAJ), [my SSRN profile](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7065188), [my GitHub profile](https://github.com/paultran47), and my ORCID (0009-0000-8559-7915).
+If you want to find out more about me and my research, please visit my
+[personal website](https://paulletran.com). You can also find my research on
+[my Google Scholar profile](https://scholar.google.com/citations?user=0zKxrWgAAAAJ),
+[my SSRN profile](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7065188),
+[my GitHub profile](https://github.com/paultran47), and my ORCID (0009-0000-8559-7915).
