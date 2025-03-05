@@ -17,6 +17,4 @@ sass:
   style: compressed
 
 compress_html:
-  clippings: all
-  endings: all
   profile: true
