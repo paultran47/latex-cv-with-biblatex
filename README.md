@@ -98,6 +98,7 @@ Below are the awesome resources used to make this GitHub Page as optimised as po
 
 * [Anatal Broder's Jekyll layout](https://github.com/penibelst/jekyll-compress-html)
 that compresses HTML in pure Liquid
+* [James Ross' method to preload and lazy-load CSS without any inline scripts](https://jross.me/asynchronous-and-progressive-css-loading/)
 * [James Steinbach's guide to optimising Jekyll GitHub Pages](https://jdsteinbach.com/performance/99-100-google-page-speed/)
 
 <p align="right">
