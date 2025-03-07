@@ -26,9 +26,9 @@ layout: compress
     <!-- Preloading lazyload-css.js and minimal-analytics.js with high priority -->
     <link rel="preload" href="/js/lazyload-css-min.js" as="script" fetchpriority="high">
     <link rel="preload" href="/js/minimal-analytics.js" as="script" fetchpriority="high">
-    <!-- Defer loading lazyload-css.js. Async loading minimal-analytics.js -->
+    <!-- Defer loading lazyload-css.js. and minimal-analytics.js -->
     <script defer src="/js/lazyload-css-min.js"></script>
-    <script async src="/js/minimal-analytics.js"></script>
+    <script defer src="/js/minimal-analytics.js"></script>
     <!-- Preloading .woff2 web fonts with high priority -->
     <link rel="preload" href="/fonts/jetbrains-mono-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" fetchpriority="high">
     <link rel="preload" href="/fonts/jetbrains-mono-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous" fetchpriority="high">
