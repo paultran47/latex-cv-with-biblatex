@@ -590,7 +590,7 @@ a:hover {
 }
 .main-content code {
   padding: 2px 4px;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "JetBrains Mono", "Consolas", "liberation mono", "Menlo", "Courier New", "Courier", monospace;
   font-size: 0.9rem;
   color: #567482;
   background-color: #f3f6fa;
@@ -741,7 +741,4 @@ body {
   font-size: 14px;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.87);
-}
-.main-content code {
-  font-family: "JetBrains Mono", "Consolas", "liberation mono", "Menlo", "Courier New", "Courier", monospace;
 }
