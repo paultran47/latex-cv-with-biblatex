@@ -23,6 +23,10 @@ layout: compress
     <link rel="alternate icon" href="/favicon.ico">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     {% include head-custom.html %}
+    <!-- Preloading lazyload-css.js with high priority -->
+    <link rel="preload" href="/js/lazyload-css.js" as="script" fetchpriority="high">
+    <!-- Defer loading lazyload-css.js -->
+    <script defer src="/js/lazyload-css.js"></script>
     <!-- Minimal GA4 JS snippet with localstorage support (2kb GZipped): https://github.com/jahilldev/minimal-analytics -->
     <script>
       window.minimalAnalytics = {
@@ -96,33 +100,6 @@ layout: compress
     <noscript data-css-lazyload>
       <link href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet" fetchpriority="low">
     </noscript>
-    <!-- JS that lazy-loads preloaded CSS -->
-    <script>
-      const decodeHTML = function(html){
-        const textarea = document.createElement('textarea');
-        textarea.innerHTML = html;
-        return textarea.value;
-      };
-      const getItemsFromContainerText = function(container, selector){
-        const parser = new DOMParser();
-        const parsedHtml = parser.parseFromString(decodeHTML(container.textContent), 'text/html');
-        return parsedHtml.querySelectorAll(selector);
-      };
-      function loadCss(){
-        const cssContainers = document.querySelectorAll('noscript[data-css-lazyload]');
-        if(!cssContainers){
-          return;
-        }
-        const styleSheets = document.createDocumentFragment();
-        for(const cssContainer of cssContainers){
-          const sheets = getItemsFromContainerText(cssContainer, 'link[rel="stylesheet"]');
-          styleSheets.append(...sheets);
-          cssContainer.remove();
-        }
-        document.head.append(styleSheets);
-      }
-      loadCss();
-    </script>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
