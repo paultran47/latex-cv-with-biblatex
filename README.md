@@ -5,13 +5,9 @@
 <details>
   <summary>Table of contents</summary>
   <ul>
-    <li>
-      <a href="#overview">Overview</a>
-      <ul>
-        <li><a href="#reporting-vulnerabilities">Reporting vulnerabilities</a></li>
-        <li><a href="#notable-features">Notable features</a></li>
-      </ul>
-    </li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#reporting-vulnerabilities">Reporting vulnerabilities</a></li>
+    <li><a href="#notable-features">Notable features</a></li>
     <li><a href="#prerequisites">Prerequisites</a></li>
   </ul>
 </details>
