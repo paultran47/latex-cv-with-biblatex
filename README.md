@@ -47,11 +47,11 @@ soon as possible.
 
 ### Notable features
 
-* Built entirely with LaTeX for ease-of-maintenance and quick updates.
+* Built entirely with LaTeX for ease-of-maintenance and quick updates
 * Built for academics. This means [Biblatex](https://ctan.org/pkg/biblatex?lang=en)
 is naturally incorporated, showing all bibliographies in chronological and
-descending order that are also sorted by name within each year.
-* Total number of publications are counted for quick display if desired.
+descending order that are also sorted by name within each year
+* Total number of publications are counted for quick display if desired
 
 <p align="right">
   (<a href="#latex-cv-with-biblatex">back to top.</a>)
