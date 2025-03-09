@@ -49,7 +49,7 @@ soon as possible.
 * Built entirely with LaTeX for ease-of-maintenance and quick updates.
 * Built for academics. This means [Biblatex](https://ctan.org/pkg/biblatex?lang=en)
 is naturally incorporated, showing bibliographies in chronological and
-descending order and sorting them by name within each year.
+descending order that are also sorted by name within each year.
 * Total number of publications are counted for quick display if desired.
 
 <p align="right">
