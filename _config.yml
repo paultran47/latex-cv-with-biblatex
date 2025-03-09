@@ -17,4 +17,8 @@ sass:
   style: compressed
 
 compress_html:
+  clippings: all
+  endings: all
+  blanklines: false
   profile: true
+  startings: [html, head, body]
