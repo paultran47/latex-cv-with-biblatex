@@ -36,7 +36,8 @@ Contributions are made to this repo via Issues and Pull Requests (PRs). A few
 general guidelines that cover both:
 
 * To report security vulnerabilities, please
-[refer to the instructions found in SECURITY.md](https://github.com/paultran47/latex-cv-with-biblatex/blob/gh-pages/SECURITY.md).
+[refer to the instructions found in SECURITY.md for the GitHub Page](https://github.com/paultran47/latex-cv-with-biblatex/blob/gh-pages/SECURITY.md)
+or [refer to the instructions found in SECURITY.md for the LaTeX code](https://github.com/paultran47/latex-cv-with-biblatex/blob/master/SECURITY.md).
 * Search for existing Issues and PRs before creating your own.
 * I work hard to makes sure issues are handled in a timely manner but, depending
 on the impact, it could take a while to investigate the root cause. A friendly
