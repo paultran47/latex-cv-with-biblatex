@@ -49,8 +49,8 @@ soon as possible.
 
 * Built entirely with LaTeX for ease-of-maintenance and quick updates.
 * Built for academics. This means [Biblatex](https://ctan.org/pkg/biblatex?lang=en)
-is naturally incorporated, and all shown bibliographies are in chronological and
-descending order, and sorted by name within each year.
+is naturally incorporated, showing all bibliographies in chronological and
+descending order that are also sorted by name within each year.
 * Total number of publications are counted for quick display if desired.
 
 <p align="right">

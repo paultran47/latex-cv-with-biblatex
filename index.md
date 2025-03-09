@@ -13,7 +13,7 @@ academic, public, or private sectors, as well as just keeping track of publicati
 In the academic world, LaTeX is the standard formatting language and for good
 reason: LaTeX makes formatting easy for maintenance and quick updates. It's for
 this very reason that I've created a CV entirely in LaTeX. To further tailor
-this for academics, the CV has integration with the awesome[biblatex package](https://ctan.org/pkg/biblatex)
+this for academics, the CV has integration with the awesome [biblatex package](https://ctan.org/pkg/biblatex)
 to easily update and maintain publications of all kinds.
 
 ## Prerequisites
@@ -218,13 +218,30 @@ as an example):
 \end{document}
 ```
 
-* `\maketitle` after `\begin{document}` inserts the header box into the LaTeX document. Afterwards, the rest of the .tex file outputs a typical LaTeX document with `\section` commands.
-* Sections that may have many columns with detailed information, such as "Teaching history" in my own CV, are structured as tabular environments with the columns specified as paragraphs. This configuration allows for flexible management of the column widths in order to prevent horizontal overflow and crashing into the margins.
+* `\maketitle` after `\begin{document}` inserts the header box into the LaTeX
+document. Afterwards, the rest of the .tex file outputs a typical LaTeX document
+with `\section` commands.
+* Sections that may have many columns with detailed information, such as
+"Teaching history" in my own CV, are structured as tabular environments with the
+columns specified as paragraphs. This configuration allows for flexible
+management of the column widths in order to prevent horizontal overflow and
+crashing into the margins.
 * To insert publications into the document, use the `\begin{publications}` environment.
-  * Each `\printbib` command will insert a subsection that contains all publications in that category, in chronological and descending order, and sorted by name within each year.
-    * Sorting specifics can be modified within the [biblatex](https://ctan.org/pkg/biblatex) package options in the .sty file.
-  * The total number of publication items (e.g., refereed and working papers) listed inside the `publications` environment is calculated, converted into an integer, and displayed in the CV using the `fmtcount` package. The page numbers for the publications section are also stored inside of the `\printbib` command with the labels `\label{pubitemsstart}` and `\label{pubitemsend}`. These allow you to output them in the CV using the `\pageref` command. All of these configurations can be found inside of the .sty file.
-  * You're allowed to have `\printbib` commands outside the `publications` environment, but the associated .bib items will not be counted towards the total number of publications.
+  * Each `\printbib` command will insert a subsection that contains all
+  publications in that category, in chronological and descending order, and
+  sorted by name within each year.
+    * Sorting specifics can be modified within the [biblatex](https://ctan.org/pkg/biblatex)
+    package options in the .sty file.
+  * The total number of publication items (e.g., refereed and working papers)
+  listed inside the `publications` environment is calculated, converted into an
+  integer, and displayed in the CV using the `fmtcount` package. The page
+  numbers for the publications section are also stored inside of the `\printbib`
+  command with the labels `\label{pubitemsstart}` and `\label{pubitemsend}`.
+  These allow you to output them in the CV using the `\pageref` command. All of
+  these configurations can be found inside of the .sty file.
+  * You're allowed to have `\printbib` commands outside the `publications`
+  environment, but the associated .bib items will not be counted towards the
+  total number of publications.
 
     ```latex
       %% Creating publications environment
