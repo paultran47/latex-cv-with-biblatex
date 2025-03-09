@@ -93,7 +93,7 @@ descending order that are also sorted by name within each year
 Below are the awesome resources used to make this GitHub Page as optimised as possible:
 
 * [Anatal Broder's Jekyll layout](https://github.com/penibelst/jekyll-compress-html)
-that compresses HTML in pure Liquid
+that compresses HTML in pure [Liquid](https://github.com/Shopify/liquid)
 * [James Ross' method to preload and lazy-load CSS without any inline scripts](https://jross.me/asynchronous-and-progressive-css-loading/)
 * [James Steinbach's guide to optimising Jekyll GitHub Pages](https://jdsteinbach.com/performance/99-100-google-page-speed/)
 
