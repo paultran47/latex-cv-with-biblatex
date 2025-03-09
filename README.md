@@ -45,7 +45,7 @@ soon as possible.
 
 * Built entirely with LaTeX for ease-of-maintenance and quick updates
 * Built for academics. This means [Biblatex](https://ctan.org/pkg/biblatex?lang=en)
-is naturally incorporated, showing bibliographies in chronological and
+is naturally incorporated, showing all bibliographies in chronological and
 descending order that are also sorted by name within each year
 * Total number of publications are counted for quick display if desired
 
@@ -76,12 +76,11 @@ descending order that are also sorted by name within each year
   * [paralist](https://ctan.org/pkg/paralist)
   * [enumitem](https://ctan.org/pkg/enumitem)
   * [array](https://ctan.org/pkg/array)
-  * [biblatex](https://ctan.org/pkg/biblatex) (with backend of
-  [Biber](https://ctan.org/pkg/biber) and options sorting = ydnt,
-  citestyle = authoryear, bibstyle = authoryear-comp, defernumbers = true,
-  maxnames = 20, giveninits = false, bibencoding = utf8, terseinits = true,
-  uniquename = init, dashed = false, doi = true, isbn = false, natbib = true,
-  backend = biber, date = year)
+  * [biblatex](https://ctan.org/pkg/biblatex) (with backend of [Biber](https://ctan.org/pkg/biber)
+  and options sorting = ydnt, citestyle = authoryear, bibstyle = authoryear-comp,
+  defernumbers = true, maxnames = 20, giveninits = false, bibencoding = utf8,
+  terseinits = true, uniquename = init, dashed = false, doi = true,
+  isbn = false, natbib = true, backend = biber, date = year)
 
 <p align="right">
   (<a href="#latex-cv-with-biblatex">back to top.</a>)
