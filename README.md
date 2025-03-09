@@ -31,7 +31,7 @@ and maintenance of my CV is a natural move.
 
 ---
 
-### Reporting vulnerabilities
+## Reporting vulnerabilities
 
 If you discover a vulnerability/error/mistake in the production code of my
 website, please [refer to the instructions found in SECURITY.md](https://github.com/paultran47/latex-cv-with-biblatex/blob/gh-pages/SECURITY.md)
@@ -44,7 +44,7 @@ soon as possible.
 
 ---
 
-### Notable features
+## Notable features
 
 * Built entirely with LaTeX for ease-of-maintenance and quick updates
 * Built for academics. This means [Biblatex](https://ctan.org/pkg/biblatex?lang=en)
@@ -58,7 +58,7 @@ descending order that are also sorted by name within each year
 
 ---
 
-### Prerequisites
+## Prerequisites
 
 * Latest version of MikTeX or TeXLive
 * The following LaTeX packages:
