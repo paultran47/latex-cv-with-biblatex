@@ -59,7 +59,7 @@ descending order that are also sorted by name within each year
 
 ---
 
-## Prerequisites
+### Prerequisites
 
 * Latest version of MikTeX or TeXLive
 * The following LaTeX packages:
@@ -92,7 +92,7 @@ descending order that are also sorted by name within each year
 
 ---
 
-## Acknowledgements
+### Acknowledgements
 
 Below are the awesome resources used to make this GitHub Page as optimised as possible:
 
