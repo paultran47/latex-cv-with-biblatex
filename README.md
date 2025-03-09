@@ -58,7 +58,7 @@ descending order that are also sorted by name within each year
 
 ---
 
-## Prerequisites
+### Prerequisites
 
 * Latest version of MikTeX or TeXLive
 * The following LaTeX packages:
