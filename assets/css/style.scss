@@ -457,7 +457,7 @@ a:hover {
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .btn {
     padding: 0.6rem 0.9rem;
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 42em) {
@@ -465,7 +465,7 @@ a:hover {
     display: block;
     width: 100%;
     padding: 0.75rem;
-    font-size: 14px;
+    font-size: 0.9rem;
   }
   .btn + .btn {
     margin-top: 1rem;
@@ -592,7 +592,8 @@ a:hover {
   padding: 2px 4px;
   font-family: "JetBrains Mono", "Courier New", "Courier", monospace;
   font-size: 14px;
-  letter-spacing: -0.17px;
+  letter-spacing: 0px;
+  word-spacing: -0.17px;
   color: #567482;
   background-color: #f3f6fa;
   border-radius: 0.3rem;
@@ -721,7 +722,7 @@ a:hover {
 }
 @media screen and (max-width: 42em) {
   .site-footer {
-    font-size: 14px;
+    font-size: 0.9rem;
   }
 }
 .site-footer-owner {
