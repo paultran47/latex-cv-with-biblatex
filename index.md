@@ -170,7 +170,8 @@ as an example):
 
   \section{Teaching history}\label{sec:teaching_history}
   \begin{compactitem}\parskip = 0cm
-    \item Since Fall 2020, student evaluations have given an average rating for my teaching of 4.34 out of 5.
+    \item Since Spring 2025, student evaluations have rated my teaching 4.65 out of 5 on average.
+    \item Since Fall 2020, student evaluations have rated my teaching assistance 4.34 out of 5 on average.
     \item I earned an \href{https://ctl.utexas.edu/teaching-preparation-series}{Advanced Teaching Preparation Certificate} in 2023 from the University of Texas at Austin.
   \end{compactitem}
   \vspace*{0.70em}
@@ -199,6 +200,7 @@ as an example):
       
   \section{Grants}
   ~\begin{tabular}{p{0.7cm} p{7.75cm} p{4.2cm} p{0.95cm}}
+    2025 & \textbf{PhD Summer Research Fellowship} & University of Texas at Austin & \$5,000\\
     2025 & \textbf{Empirical Macro Economics Policy Center of Texas \newline Dissertation Funding} & University of Texas at Austin & \$1,919\\
     2024 & \textbf{PhD Summer Research Fellowship} & University of Texas at Austin & \$5,000\\
     2023 & \textbf{PhD Summer Research Fellowship} & University of Texas at Austin & \$3,000\\
