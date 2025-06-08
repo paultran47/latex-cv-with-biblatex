@@ -175,11 +175,11 @@ as an example):
     \item I earned an \href{https://ctl.utexas.edu/teaching-preparation-series}{Advanced Teaching Preparation Certificate} in 2023 from the University of Texas at Austin.
   \end{compactitem}
   \vspace*{0.70em}
-  ~\begin{tabular}{p{2.3cm} p{3.1cm} p{2.4cm} p{6.3cm}}
-    University of \newline Texas at Austin & \textbf{Assistant Instructor} & Fall 2024, \newline Spring 2025 & Introduction to Macroeconomics\\
+  ~\begin{tabular}{p{2.3cm} p{3.1cm} p{2.3cm} p{6.4cm}}
+    University of \newline Texas at Austin & \textbf{Assistant Instructor} & Fall 2024--2025 & Introduction to Macroeconomics\\
     & \textbf{Teaching Assistant} & Spring 2024 & Macro and the Labor Market \newline (MA course), Andreas Mueller\\
     & & & Labor Economics\newline (MA course), Gerald Oettinger\\
-    & & Fall 2021 - 2023 & Introduction to Microeconomics \newline (Synchronous Massive Online Course for \newline fall), Charity-Joy Acchiardo, Wayne \newline Geerling, Dirk Mateer\\
+    & & Fall 2021--2023 & Introduction to Microeconomics \newline (Synchronous Massive Online Course for \newline fall), Charity-Joy Acchiardo, Wayne \newline Geerling, Dirk Mateer\\
     & & Summer 2022 & Health Economics, Helen Schneider\\
     & & Fall 2020, \newline Spring 2021 & Introduction to Macroeconomics, \newline Michael Sadler, Charity-Joy Acchiardo
   \end{tabular}
