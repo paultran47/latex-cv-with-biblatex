@@ -130,7 +130,7 @@ as an example):
   \thispagestyle{firststyle}
   \section{Education}
   ~\begin{tabular}{llll}
-    2020 - & \textbf{PhD} & Economics & University of Texas at Austin\\
+    2020-- & \textbf{PhD} & Economics & University of Texas at Austin\\
     2023 & \textbf{MS en Passant} & Economics & University of Texas at Austin\\
     2017 & \textbf{BA} & Mathematics, Mathematical Economics & Pomona College
   \end{tabular}
@@ -162,9 +162,9 @@ as an example):
 
   \section{Honours and awards}
   ~\begin{tabular}{lll}
-    2020 - & \textbf{Graduate Teaching Fellowship} & University of Texas at Austin\\
+    2020-- & \textbf{Graduate Teaching Fellowship} & University of Texas at Austin\\
     2017 & \textbf{Distinction in Economics Senior Exercise} & Pomona College\\
-    2014 - 2015 & \textbf{Pomona College Scholar} & Pomona College
+    2014--2015 & \textbf{Pomona College Scholar} & Pomona College
   \end{tabular}
   \vspace*{0.25em}
 
@@ -191,8 +191,8 @@ as an example):
   \end{compactitem}
   \vspace*{0.70em}
   ~\begin{tabular}{lll}
-    2018 - 2020 & \textbf{Senior Research Assistant} & Board of Governors of the Federal Reserve System\\
-    2017 - 2018 & \textbf{Research Assistant} & Board of Governors of the Federal Reserve System
+    2018--2020 & \textbf{Senior Research Assistant} & Board of Governors of the Federal Reserve System\\
+    2017--2018 & \textbf{Research Assistant} & Board of Governors of the Federal Reserve System
   \end{tabular}
   \vspace*{0.25em}
       
