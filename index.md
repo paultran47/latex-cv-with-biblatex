@@ -138,7 +138,7 @@ as an example):
 
   \section{Research}
   \begin{compactitem}\parskip = 0cm
-    \item My current interests involve applications of text analysis and natural language processing for studying the empirical effects of institutional communication, like those from central banks, on macroeconomics, finance, and expectations formation.
+    \item My current interests involve \textbf{applications of text analysis and natural language processing in macroeconomics}, particularly for studying the empirical effects of institutional communication, like those from central banks, on economic outcomes and expectations formation.
     %% Uncomment the following line to display the total value of publications, submissions, and so on that are included in the
     %% calculation of sumpapers (see .sty file for definition).
     % \item I have authored or co-authored \numberstringnum{\getrefnumber{sumpapers}} publications on economic topics. A list of these appear below.
