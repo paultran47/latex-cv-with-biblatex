@@ -64,7 +64,7 @@ should look similar to the following (don't mind the comments):
 
 %% Setting up bibliography
 \addbibresource{tran_paul_le_cv_wps.bib}
-\addbibresource{tran_paul_le_cv_wips.bib}
+% \addbibresource{tran_paul_le_cv_wips.bib}
 \DeclareSourcemap{
   \maps[datatype = bibtex, overwrite]{
     \map{
@@ -76,11 +76,10 @@ should look similar to the following (don't mind the comments):
 
 %% Add selected items from .bib files to be shown
 \addtocategory{wps}{
+  tran_fomcnn_jmp,
   tran_opecnn,
 }
-\addtocategory{wips}{
-  tran_moretimepls,
-}
+% \addtocategory{wips}{}
 ```
 
 * The packages installed are all listed in the .sty file.
@@ -156,7 +155,7 @@ as an example):
   %% definition)
   \begin{publications}
     \printbib{wps}
-    \printbib{wips}
+    % \printbib{wips}
   \end{publications}
   \vspace*{-0.75em}
 
@@ -176,7 +175,7 @@ as an example):
   \end{compactitem}
   \vspace*{0.70em}
   ~\begin{tabular}{p{2.3cm} p{3.1cm} p{2.3cm} p{6.4cm}}
-    University of \newline Texas at Austin & \textbf{Assistant Instructor} & Fall 2024--2025 & Introduction to Macroeconomics\\
+    University of \newline Texas at Austin & \textbf{Assistant Instructor} & Fall 2024-- & Introduction to Macroeconomics\\
     & \textbf{Teaching Assistant} & Spring 2024 & Macro and the Labor Market \newline (MA course), Andreas Mueller\\
     & & & Labor Economics\newline (MA course), Gerald Oettinger\\
     & & Fall 2021--2023 & Introduction to Microeconomics \newline (Synchronous Massive Online Course for \newline fall), Charity-Joy Acchiardo, Wayne \newline Geerling, Dirk Mateer\\
