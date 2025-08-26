@@ -45,6 +45,9 @@ should look similar to the following (don't mind the comments):
 %% Loading .sty file
 \usepackage{tran_paul_le_cv}
 
+%% Shortening URLs in .bib files
+\DeclareFieldFormat{url}{\href{#1}{\mkbibacro{URL}}}
+
 %% Adding space before section headings
 \titlespacing{\section}{0pt}{2ex}{1ex}
 
@@ -288,7 +291,7 @@ crashing into the margins.
 
 Feel free to take a look at the [.tex file here](https://raw.githubusercontent.com/paultran47/latex-cv-with-biblatex/master/tran_paul_le_cv.tex),
 the [.sty file here](https://raw.githubusercontent.com/paultran47/latex-cv-with-biblatex/master/tran_paul_le_cv.sty),
-my [personal CV](https://drive.google.com/file/d/1P3rTeJtPRlIMhha3hauKHkdX2BGse3ht/view)
+my [personal CV](https://paulletran.com/papers/wps/tran_paul_le_cv_aug25.pdf)
 as an example, and the [GitHub repo](https://github.com/paultran47/latex-cv-with-biblatex)
 for the source code (also found by the buttons at the top of this website).
 
