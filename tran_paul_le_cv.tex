@@ -4,7 +4,7 @@
 
 %% LaTeX-style CV with biblatex package usage
 %% Paul L. Tran
-%% Last updated: 30 Jul, 2025.
+%% Last updated: 26 Aug, 2025.
 %=================================================
 
 %=================================================
@@ -12,6 +12,9 @@
 
 %% Loading .sty file
 \usepackage{tran_paul_le_cv}
+
+%% Shortening URLs in .bib files
+\DeclareFieldFormat{url}{\href{#1}{\mkbibacro{URL}}}
 
 %% Adding space before section headings
 \titlespacing{\section}{0pt}{2ex}{1ex}
