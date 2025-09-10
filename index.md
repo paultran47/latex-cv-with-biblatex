@@ -147,12 +147,6 @@ as an example):
   \end{compactitem}
   \vspace*{0.25em}
 
-  \section{Dissertation}
-  \begin{compactitem}\parskip = 0cm
-    \item Committee: Olivier Coibion (Co-Supervisor), Christoph Boehm (Co-Supervisor), Saroj Bhattarai, and Amy Handlan (Brown University)
-  \end{compactitem}
-  \vspace*{0.25em}
-
   %% Adding working papers, works in progress, and publications .bib files
   %% You can include \printbib outside of the publications environment. They just won't be counted towards sumpapers (see .sty file for
   %% definition)
@@ -162,15 +156,15 @@ as an example):
   \end{publications}
   \vspace*{-0.75em}
 
-  \section{Honours and awards}
-  ~\begin{tabular}{lll}
-    2020-- & \textbf{Graduate Teaching Fellowship} & University of Texas at Austin\\
-    2017 & \textbf{Distinction in Economics Senior Exercise} & Pomona College\\
-    2014--2015 & \textbf{Pomona College Scholar} & Pomona College
+  \section{Dissertation Committee and References}
+  ~\begin{tabular}{p{5cm} p{5.2cm}}
+    \textbf{Olivier Coibion (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:ocoibion@austin.utexas.edu}{ocoibion@austin.utexas.edu} & \textbf{Christoph Boehm (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:cboehm@utexas.edu}{cboehm@utexas.edu}\\
+    &\\
+    \textbf{Saroj Bhattari} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:saroj.bhattarai@austin.utexas.edu}{saroj.bhattarai@austin.utexas.edu} & \textbf{Amy Handlan} \newline Department of Economics \newline Brown University \newline \href{mailto:amy\_handlan@brown.edu}{amy\_handlan@brown.edu}
   \end{tabular}
   \vspace*{0.25em}
 
-  \section{Teaching history}\label{sec:teaching_history}
+  \section{Teaching History}\label{sec:teaching_history}
   \begin{compactitem}\parskip = 0cm
     \item Since Fall 2024, student evaluations have rated my teaching 4.6 out of 5 on average.
     \item Since Fall 2020, student evaluations have rated my teaching assistance 4.4 out of 5 on average.
@@ -187,7 +181,7 @@ as an example):
   \end{tabular}
   \vspace*{0.25em}
 
-  \section{Other Employment history}
+  \section{Other Employment History}
   \begin{compactitem}\parskip = 0cm
     \item Please see the {\hypersetup{linkcolor = black}\hyperref[sec:teaching_history]{``Teaching history''}} section for details about my teaching employment and experience.
   \end{compactitem}
@@ -197,19 +191,22 @@ as an example):
     2017--2018 & \textbf{Research Assistant} & Board of Governors of the Federal Reserve System
   \end{tabular}
   \vspace*{0.25em}
-      
-  \section{Grants}
-  ~\begin{tabular}{p{0.7cm} p{7.75cm} p{4.2cm} p{0.95cm}}
+
+  \section{Honours and Awards}
+  ~\begin{tabular}{p{1.6cm} p{6.2cm} p{4.2cm} p{0.95cm}}
+    2020-- & \textbf{Graduate Teaching Fellowship} & University of Texas at Austin &\\
     2025 & \textbf{PhD Summer Research Fellowship} & University of Texas at Austin & \$5,000\\
-    2025 & \textbf{Empirical Macro Economics Policy Center of Texas \newline Dissertation Funding} & University of Texas at Austin & \$1,919\\
+    2025 & \textbf{Empirical Macro Economics Policy \newline Center of Texas Dissertation Funding} & University of Texas at Austin & \$1,919\\
     2024 & \textbf{PhD Summer Research Fellowship} & University of Texas at Austin & \$5,000\\
     2023 & \textbf{PhD Summer Research Fellowship} & University of Texas at Austin & \$3,000\\
+    2017 & \textbf{Distinction in Economics Senior Exercise} & Pomona College &\\
     2016 & \textbf{Harry G. Steele Scholarship} & Pomona College & \$4,000\\
+    2014--2015 & \textbf{Pomona College Scholar} & Pomona College &\\
     2013 & \textbf{Flextronics Texas Scholarship} & Pomona College & \$1,000
   \end{tabular}
   \vspace*{0.25em}
-    
-  \section{Miscellaneous information}
+
+  \section{Miscellaneous Information}
   \begin{compactitem}\parskip = 0cm
     \item \textbf{Programming:} Matlab, Python, Bash, SAS, \href{https://en.wikipedia.org/wiki/FAME_(database)}{FAME}, (P)SQL, R, Stata, EViews, \LaTeX
     \item \textbf{Front-end Development:} Vanilla HTML, CSS, JS, Jekyll
