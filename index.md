@@ -160,7 +160,7 @@ as an example):
   ~\begin{tabular}{p{5cm} p{5.2cm}}
     \textbf{Olivier Coibion (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:ocoibion@austin.utexas.edu}{ocoibion@austin.utexas.edu} & \textbf{Christoph Boehm (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:cboehm@utexas.edu}{cboehm@utexas.edu}\\
     &\\
-    \textbf{Saroj Bhattari} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:saroj.bhattarai@austin.utexas.edu}{saroj.bhattarai@austin.utexas.edu} & \textbf{Amy Handlan} \newline Department of Economics \newline Brown University \newline \href{mailto:amy\_handlan@brown.edu}{amy\_handlan@brown.edu}
+    \textbf{Saroj Bhattarai} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:saroj.bhattarai@austin.utexas.edu}{saroj.bhattarai@austin.utexas.edu} & \textbf{Amy Handlan} \newline Department of Economics \newline Brown University \newline \href{mailto:amy\_handlan@brown.edu}{amy\_handlan@brown.edu}
   \end{tabular}
   \vspace*{0.25em}
 
