@@ -4,7 +4,7 @@
 
 %% LaTeX-style CV with biblatex package usage
 %% Paul L. Tran
-%% Last updated: 30 Jul, 2025
+%% Last updated: 27 Oct, 2025
 %=================================================
 
 %=================================================
@@ -140,12 +140,22 @@
 \DeclareFieldFormat{shorthandwidth}{#1}
 \DeclareFieldFormat{extradate}{}
 
+%% Showing abstracts for biblatex entries (useful for JMCs IMO. Less useful when finished with the job market and can turn off to save space)
+\renewbibmacro*{finentry}{
+  \setunit{\finentrypunct\par}
+  \usebibmacro{abstract}
+  \finentry
+}
+
 %% Making URL the same font as text, not courier default
 \urlstyle{same}
 \newcommand{\doi}[1]{\url{#1}}
 
 %% Making URL label for bibliography items appear in uppercase and same size as DOI font IN THE SITUATION small caps exist for the font
 \DeclareFieldFormat{url}{{\footnotesize URL}\addcolon\space\url{#1}}
+
+%% Shortening URLs in .bib files to display only "URL" if desired
+% \DeclareFieldFormat{url}{\href{#1}{\mkbibacro{URL}}}
 
 %% Remove "In:" for an article citation
 \renewbibmacro{in:}{%

@@ -4,7 +4,7 @@
 
 %% LaTeX-style CV with biblatex package usage
 %% Paul L. Tran
-%% Last updated: 09 Oct, 2025
+%% Last updated: 27 Oct, 2025
 %=================================================
 
 %=================================================
@@ -12,9 +12,6 @@
 
 %% Loading .sty file
 \usepackage{tran_paul_le_cv}
-
-%% Shortening URLs in .bib files
-\DeclareFieldFormat{url}{\href{#1}{\mkbibacro{URL}}}
 
 %% Adding space before section headings
 \titlespacing{\section}{0pt}{2ex}{1ex}
@@ -60,21 +57,34 @@
   \maketitle
   \thispagestyle{firststyle}
   \section{Education}
-  ~\begin{tabular}{llll}
-    2020-- & \textbf{PhD} & Economics & University of Texas at Austin\\
-    2023 & \textbf{MS en Passant} & Economics & University of Texas at Austin\\
-    2017 & \textbf{BA} & Mathematics, Mathematical Economics & Pomona College
+  \begin{tabular}{p{4cm} p{2.5cm} p{3.6cm} p{4.1cm}}
+    2020--May 2026 (Expected) & \textbf{PhD} & Economics & University of Texas at Austin
   \end{tabular}
-  \vspace*{0.25em}
+  \begin{compactitem}
+    \item Dissertation: ``Essays on Applications of Text Analysis in Macroeconomics''
+  \end{compactitem}
+  %% Putting standard vertical spacing of 1em due to compactitem and tabular environments not playing nice with each other
+  \vspace{1em}
+  \begin{tabular}{p{4cm} p{2.5cm} p{3.6cm} p{4.1cm}}
+    2023 & \textbf{MS en Passant} & Economics & University of Texas at Austin\\
+    2017 & \textbf{BA} & Mathematics, \newline Mathematical Economics & Pomona College
+  \end{tabular}
 
-  \section{Research}
+  \section{Research Interests}
   \begin{compactitem}\parskip = 0cm
-    \item As an applied macroeconomist, I use text analysis and natural language processing to study how communication from institutions like central banks shapes economic outcomes and expectations.
+    \item \textbf{Fields}: Macroeconomics, Monetary Economics
+    \item \textbf{Methods}: Text Analysis, Machine Learning
     %% Uncomment the following line to display the total value of publications, submissions, and so on that are included in the
     %% calculation of sumpapers (see .sty file for definition).
     % \item I have authored or co-authored \numberstringnum{\getrefnumber{sumpapers}} publications on economic topics. A list of these appear below.
   \end{compactitem}
-  \vspace*{0.25em}
+
+  \section{Dissertation Committee and References}
+  \begin{tabular}{p{4.9cm} p{5.2cm}}
+    \textbf{Olivier Coibion (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:ocoibion@austin.utexas.edu}{ocoibion@austin.utexas.edu} \newline +1 (512) 475-8537 & \textbf{Christoph Boehm (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:cboehm@utexas.edu}{cboehm@utexas.edu} \newline +1 (734) 548-1090\\
+    &\\
+    \textbf{Saroj Bhattarai} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:saroj.bhattarai@austin.utexas.edu}{saroj.bhattarai@austin.utexas.edu} \newline +1 (512) 475-8539 & \textbf{Amy Handlan} \newline Department of Economics \newline Brown University \newline \href{mailto:amy\_handlan@brown.edu}{amy\_handlan@brown.edu}
+  \end{tabular}
 
   %% Adding working papers, works in progress, and publications .bib files
   %% You can include \printbib outside of the publications environment. They just won't be counted towards sumpapers (see .sty file for
@@ -83,15 +93,6 @@
     \printbib{wps}
     % \printbib{wips}
   \end{publications}
-  \vspace*{-0.75em}
-
-  \section{Dissertation Committee and References}
-  ~\begin{tabular}{p{5cm} p{5.2cm}}
-    \textbf{Olivier Coibion (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:ocoibion@austin.utexas.edu}{ocoibion@austin.utexas.edu} & \textbf{Christoph Boehm (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:cboehm@utexas.edu}{cboehm@utexas.edu}\\
-    &\\
-    \textbf{Saroj Bhattarai} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:saroj.bhattarai@austin.utexas.edu}{saroj.bhattarai@austin.utexas.edu} & \textbf{Amy Handlan} \newline Department of Economics \newline Brown University \newline \href{mailto:amy\_handlan@brown.edu}{amy\_handlan@brown.edu}
-  \end{tabular}
-  \vspace*{0.25em}
 
   \section{Teaching History}\label{sec:teaching_history}
   \begin{compactitem}\parskip = 0cm
@@ -99,30 +100,30 @@
     \item Since Fall 2020, student evaluations have rated my teaching assistance 4.4 out of 5 on average.
     \item I earned an \href{https://ctl.utexas.edu/teaching-preparation-series}{Advanced Teaching Preparation Certificate} in 2023 from the University of Texas at Austin.
   \end{compactitem}
-  \vspace*{0.70em}
-  ~\begin{tabular}{p{2.3cm} p{3.1cm} p{2.3cm} p{6.4cm}}
+  %% Putting standard vertical spacing of 1em due to compactitem and tabular environments not playing nice with each other
+  \vspace{1em}
+  \begin{tabular}{p{2.3cm} p{3.1cm} p{2.3cm} p{6.4cm}}
     University of \newline Texas at Austin & \textbf{Assistant Instructor} & Fall 2024-- & Introduction to Macroeconomics\\
     & \textbf{Teaching Assistant} & Spring 2024 & Macro and the Labor Market \newline (MA course), Andreas Mueller\\
     & & & Labor Economics\newline (MA course), Gerald Oettinger\\
-    & & Fall 2021--2023 & Introduction to Microeconomics \newline (Synchronous Massive Online Course for \newline fall), Charity-Joy Acchiardo, Wayne \newline Geerling, Dirk Mateer\\
+    & & Fall 2021--2023 & Introduction to Microeconomics \newline (Synchronous Massive Online Course \newline for fall), Charity-Joy Acchiardo, \newline Wayne Geerling, Dirk Mateer\\
     & & Summer 2022 & Health Economics, Helen Schneider\\
     & & Fall 2020, \newline Spring 2021 & Introduction to Macroeconomics, \newline Michael Sadler, Charity-Joy Acchiardo
   \end{tabular}
-  \vspace*{0.25em}
 
   \section{Other Employment History}
   \begin{compactitem}\parskip = 0cm
     \item Please see the {\hypersetup{linkcolor = black}\hyperref[sec:teaching_history]{``Teaching history''}} section for details about my teaching employment and experience.
   \end{compactitem}
-  \vspace*{0.70em}
-  ~\begin{tabular}{lll}
+  %% Putting standard vertical spacing of 1em due to compactitem and tabular environments not playing nice with each other
+  \vspace{1em}
+  \begin{tabular}{lll}
     2018--2020 & \textbf{Senior Research Assistant} & Board of Governors of the Federal Reserve System\\
     2017--2018 & \textbf{Research Assistant} & Board of Governors of the Federal Reserve System
   \end{tabular}
-  \vspace*{0.25em}
 
   \section{Honours and Awards}
-  ~\begin{tabular}{p{1.6cm} p{6.2cm} p{4.2cm} p{0.95cm}}
+  \begin{tabular}{p{1.6cm} p{6.2cm} p{4.2cm} p{0.95cm}}
     2020-- & \textbf{Graduate Teaching Fellowship} & University of Texas at Austin &\\
     2025 & \textbf{PhD Summer Research Fellowship} & University of Texas at Austin & \$5,000\\
     2025 & \textbf{Empirical Macro Economics Policy \newline Center of Texas Dissertation Funding} & University of Texas at Austin & \$1,919\\
@@ -133,7 +134,6 @@
     2014--2015 & \textbf{Pomona College Scholar} & Pomona College &\\
     2013 & \textbf{Flextronics Texas Scholarship} & Pomona College & \$1,000
   \end{tabular}
-  \vspace*{0.25em}
 
   \section{Miscellaneous Information}
   \begin{compactitem}\parskip = 0cm
@@ -154,16 +154,16 @@
 %% Code for detailed ongoing projects
   \iffalse      
   \section{Ongoing research projects}
-  ~\begin{tabular}{l p{13cm}}
+  \begin{tabular}{l p{13cm}}
     2019--Present; & \textit{``How useful is the Evercore ISI Capital Goods Companies Survey in Forecasting Orders and Shipments of Capital Goods?"}, with Eugenio Pinto.
   \end{tabular}
   \begin{compactitem}\parskip = 0cm
     \item Created two VAR models for in-sample and out-of-sample forecasting, with the base model consisting of only total shipments and total new orders, whilst the alternative model included the weekly-frequency business sentiment survey index from Evercore-ISI.
     \item Found our alternative model to perform better at forecasting investment at business cycle turning points, and had smaller forecast errors at most time horizons.
   \end{compactitem}
-  \vspace*{1em}
+  \vspace{1em}
       
-  ~\begin{tabular}{l p{13cm}}
+  \begin{tabular}{l p{13cm}}
     2018--Present; & \textit{``The Story Chain Index: High-frequency Record Updates Linkage Across Time with No Metadata"}, with Andrew C. Chang and Sarah Adler.
   \end{tabular}
   \begin{compactitem}\parskip = 0cm
