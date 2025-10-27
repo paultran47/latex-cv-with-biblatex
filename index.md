@@ -210,19 +210,6 @@ overflow and crashing into the margins.
         \usebibmacro{abstract}
         \finentry
       }
-
-      %% Making URL label for bibliography items appear in uppercase and same size as DOI font IN THE SITUATION small caps exist for the font
-      \DeclareFieldFormat{url}{{\footnotesize URL}\addcolon\space\url{#1}}
-
-      %% Shortening URLs in .bib files to display only "URL" if desired
-      % \DeclareFieldFormat{url}{\href{#1}{\mkbibacro{URL}}}
-
-      %% Remove "In:" for an article citation
-      \renewbibmacro{in:}{%
-        \ifentrytype{article}{}{
-          \printtext{\bibstring{in}\intitlepunct}
-        }
-      }
     ```
 
   * The total number of publication items (e.g., refereed and working papers)
