@@ -84,9 +84,7 @@
 \def\headrule{{\color[gray]{0.4}\hrule\@height\headrulewidth\@width\headwidth \vskip-\headrulewidth}}
 
 %% Format date to be Month YYYY
-\newdateformat{monthyeardate}{
-  \monthname[\THEMONTH] \THEYEAR
-}
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
 
 %% Creating header box
 \def\name#1{\def\@name{#1}}
