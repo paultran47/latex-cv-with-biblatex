@@ -202,6 +202,7 @@ overflow and crashing into the margins.
   abstract of your job market paper saves the search committees a lot of time when
   reviewing your application. There are also other customisations on how your .bib
   entries will output into the CV.
+
     ```latex
       %% Showing abstracts for biblatex entries (useful for JMCs IMO. Less useful when finished with the job market and can turn off to save space)
       \renewbibmacro*{finentry}{
@@ -223,6 +224,7 @@ overflow and crashing into the margins.
         }
       }
     ```
+
   * The total number of publication items (e.g., refereed and working papers)
   listed inside the `publications` environment is calculated, converted into an
   integer, and displayed in the CV using the `fmtcount` package. The page
