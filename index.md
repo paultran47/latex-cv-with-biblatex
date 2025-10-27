@@ -16,6 +16,11 @@ this very reason that I've created a CV entirely in LaTeX. To further tailor
 this for academics, the CV has integration with the awesome [biblatex package](https://ctan.org/pkg/biblatex)
 to easily update and maintain publications of all kinds.
 
+Please note that because I'm an Economics PhD candidate and applied
+macroeconomist on the 2025--26 job market, the files for this CV are customised
+for an economist that is going on the job market in mind. As such, some code
+and conventions might not be relevant for your own research needs!
+
 ## Prerequisites
 
 To work with the source code and tailor this CV for your own needs, you will
@@ -45,9 +50,6 @@ should look similar to the following (don't mind the comments):
 %% Loading .sty file
 \usepackage{tran_paul_le_cv}
 
-%% Shortening URLs in .bib files
-\DeclareFieldFormat{url}{\href{#1}{\mkbibacro{URL}}}
-
 %% Adding space before section headings
 \titlespacing{\section}{0pt}{2ex}{1ex}
 
@@ -64,7 +66,9 @@ should look similar to the following (don't mind the comments):
   Email: & \href{mailto:pltran@utexas.edu}{pltran@utexas.edu}\\
   Website: & \href{https://paulletran.com/}{https://paulletran.com/}
 }
+%=================================================
 
+%=================================================
 %% Setting up bibliography
 \addbibresource{tran_paul_le_cv_wps.bib}
 % \addbibresource{tran_paul_le_cv_wips.bib}
@@ -83,69 +87,41 @@ should look similar to the following (don't mind the comments):
   tran_opecnn,
 }
 % \addtocategory{wips}{}
-```
+%=================================================
 
-* The packages installed are all listed in the .sty file.
-* Your name should be placed in the `\name` command.
-* Relevant contact information should be placed into the `\info` command. The
-argument is essentially a long string structured as a tabular environment with
-two columns, but feel free to remove or add custom rows and columns to suit your
-needs.
-* The final section of your preamble should be for bibliographies. You should
-declare each .bib file in their individual `\addbibresource` commands (using my
-CV as an example, I have two .bib files for working papers and works-in-progress).
-The `\addtocategory` command allows you to specify what BibTeX entry types you
-want to both count in your total publications and display in the CV itself. You
-can find out more about all the [standard entry types here](https://www.bibtex.com/e/entry-types/).
-  * The .sty file currently has the following pre-defined categories:
-
-    | label       | Category                         |
-    |-------------|----------------------------------|
-    | books       | Books                            |
-    | papers      | Refereed research papers         |
-    | chapters    | Book chapters                    |
-    | conferences | Papers in conference proceedings |
-    | bookreviews | Book reviews                     |
-    | editorials  | Editorials                       |
-    | phd         | Dissertation                     |
-    | subpapers   | Submitted papers                 |
-    | wps         | Working papers                   |
-    | wips        | Works in progress                |
-
-  * You can also create customised categories if you find the aforementioned
-  categories not suitable. For example, if you have published software packages
-  and wish to a specific category for those contributions, simply add the
-  following into the .sty file
-
-  ```latex
-  \makebibcategory{software}{Published software packages}
-  ```
-
-### Document
-
-After the preamble, your .tex file should look like this (again using my own CV
-as an example):
-
-```latex
+%=================================================
 \begin{document}
   \maketitle
   \thispagestyle{firststyle}
   \section{Education}
-  ~\begin{tabular}{llll}
-    2020-- & \textbf{PhD} & Economics & University of Texas at Austin\\
-    2023 & \textbf{MS en Passant} & Economics & University of Texas at Austin\\
-    2017 & \textbf{BA} & Mathematics, Mathematical Economics & Pomona College
+  \begin{tabular}{p{4cm} p{2.5cm} p{3.6cm} p{4.1cm}}
+    2020--May 2026 (Expected) & \textbf{PhD} & Economics & University of Texas at Austin
   \end{tabular}
-  \vspace*{0.25em}
+  \begin{compactitem}
+    \item Dissertation: ``Essays on Applications of Text Analysis in Macroeconomics''
+  \end{compactitem}
+  %% Putting standard vertical spacing of 1em due to compactitem and tabular environments not playing nice with each other
+  \vspace{1em}
+  \begin{tabular}{p{4cm} p{2.5cm} p{3.6cm} p{4.1cm}}
+    2023 & \textbf{MS en Passant} & Economics & University of Texas at Austin\\
+    2017 & \textbf{BA} & Mathematics, \newline Mathematical Economics & Pomona College
+  \end{tabular}
 
-  \section{Research}
+  \section{Research Interests}
   \begin{compactitem}\parskip = 0cm
-    \item As an applied macroeconomist, I use text analysis and natural language processing to study how communication from institutions like central banks shapes economic outcomes and expectations.
+    \item \textbf{Fields}: Macroeconomics, Monetary Economics
+    \item \textbf{Methods}: Text Analysis, Machine Learning
     %% Uncomment the following line to display the total value of publications, submissions, and so on that are included in the
     %% calculation of sumpapers (see .sty file for definition).
     % \item I have authored or co-authored \numberstringnum{\getrefnumber{sumpapers}} publications on economic topics. A list of these appear below.
   \end{compactitem}
-  \vspace*{0.25em}
+
+  \section{Dissertation Committee and References}
+  \begin{tabular}{p{4.9cm} p{5.2cm}}
+    \textbf{Olivier Coibion (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:ocoibion@austin.utexas.edu}{ocoibion@austin.utexas.edu} \newline +1 (512) 475-8537 & \textbf{Christoph Boehm (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:cboehm@utexas.edu}{cboehm@utexas.edu} \newline +1 (734) 548-1090\\
+    &\\
+    \textbf{Saroj Bhattarai} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:saroj.bhattarai@austin.utexas.edu}{saroj.bhattarai@austin.utexas.edu} \newline +1 (512) 475-8539 & \textbf{Amy Handlan} \newline Department of Economics \newline Brown University \newline \href{mailto:amy\_handlan@brown.edu}{amy\_handlan@brown.edu}
+  \end{tabular}
 
   %% Adding working papers, works in progress, and publications .bib files
   %% You can include \printbib outside of the publications environment. They just won't be counted towards sumpapers (see .sty file for
@@ -154,15 +130,6 @@ as an example):
     \printbib{wps}
     % \printbib{wips}
   \end{publications}
-  \vspace*{-0.75em}
-
-  \section{Dissertation Committee and References}
-  ~\begin{tabular}{p{5cm} p{5.2cm}}
-    \textbf{Olivier Coibion (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:ocoibion@austin.utexas.edu}{ocoibion@austin.utexas.edu} & \textbf{Christoph Boehm (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:cboehm@utexas.edu}{cboehm@utexas.edu}\\
-    &\\
-    \textbf{Saroj Bhattarai} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:saroj.bhattarai@austin.utexas.edu}{saroj.bhattarai@austin.utexas.edu} & \textbf{Amy Handlan} \newline Department of Economics \newline Brown University \newline \href{mailto:amy\_handlan@brown.edu}{amy\_handlan@brown.edu}
-  \end{tabular}
-  \vspace*{0.25em}
 
   \section{Teaching History}\label{sec:teaching_history}
   \begin{compactitem}\parskip = 0cm
@@ -170,30 +137,30 @@ as an example):
     \item Since Fall 2020, student evaluations have rated my teaching assistance 4.4 out of 5 on average.
     \item I earned an \href{https://ctl.utexas.edu/teaching-preparation-series}{Advanced Teaching Preparation Certificate} in 2023 from the University of Texas at Austin.
   \end{compactitem}
-  \vspace*{0.70em}
-  ~\begin{tabular}{p{2.3cm} p{3.1cm} p{2.3cm} p{6.4cm}}
+  %% Putting standard vertical spacing of 1em due to compactitem and tabular environments not playing nice with each other
+  \vspace{1em}
+  \begin{tabular}{p{2.3cm} p{3.1cm} p{2.3cm} p{6.4cm}}
     University of \newline Texas at Austin & \textbf{Assistant Instructor} & Fall 2024-- & Introduction to Macroeconomics\\
     & \textbf{Teaching Assistant} & Spring 2024 & Macro and the Labor Market \newline (MA course), Andreas Mueller\\
     & & & Labor Economics\newline (MA course), Gerald Oettinger\\
-    & & Fall 2021--2023 & Introduction to Microeconomics \newline (Synchronous Massive Online Course for \newline fall), Charity-Joy Acchiardo, Wayne \newline Geerling, Dirk Mateer\\
+    & & Fall 2021--2023 & Introduction to Microeconomics \newline (Synchronous Massive Online Course \newline for fall), Charity-Joy Acchiardo, \newline Wayne Geerling, Dirk Mateer\\
     & & Summer 2022 & Health Economics, Helen Schneider\\
     & & Fall 2020, \newline Spring 2021 & Introduction to Macroeconomics, \newline Michael Sadler, Charity-Joy Acchiardo
   \end{tabular}
-  \vspace*{0.25em}
 
   \section{Other Employment History}
   \begin{compactitem}\parskip = 0cm
     \item Please see the {\hypersetup{linkcolor = black}\hyperref[sec:teaching_history]{``Teaching history''}} section for details about my teaching employment and experience.
   \end{compactitem}
-  \vspace*{0.70em}
-  ~\begin{tabular}{lll}
+  %% Putting standard vertical spacing of 1em due to compactitem and tabular environments not playing nice with each other
+  \vspace{1em}
+  \begin{tabular}{lll}
     2018--2020 & \textbf{Senior Research Assistant} & Board of Governors of the Federal Reserve System\\
     2017--2018 & \textbf{Research Assistant} & Board of Governors of the Federal Reserve System
   \end{tabular}
-  \vspace*{0.25em}
 
   \section{Honours and Awards}
-  ~\begin{tabular}{p{1.6cm} p{6.2cm} p{4.2cm} p{0.95cm}}
+  \begin{tabular}{p{1.6cm} p{6.2cm} p{4.2cm} p{0.95cm}}
     2020-- & \textbf{Graduate Teaching Fellowship} & University of Texas at Austin &\\
     2025 & \textbf{PhD Summer Research Fellowship} & University of Texas at Austin & \$5,000\\
     2025 & \textbf{Empirical Macro Economics Policy \newline Center of Texas Dissertation Funding} & University of Texas at Austin & \$1,919\\
@@ -204,7 +171,6 @@ as an example):
     2014--2015 & \textbf{Pomona College Scholar} & Pomona College &\\
     2013 & \textbf{Flextronics Texas Scholarship} & Pomona College & \$1,000
   \end{tabular}
-  \vspace*{0.25em}
 
   \section{Miscellaneous Information}
   \begin{compactitem}\parskip = 0cm
@@ -221,16 +187,42 @@ as an example):
 document. Afterwards, the rest of the .tex file outputs a typical LaTeX document
 with `\section` commands.
 * Sections that may have many columns with detailed information, such as
-"Teaching history" in my own CV, are structured as tabular environments with the
-columns specified as paragraphs. This configuration allows for flexible
-management of the column widths in order to prevent horizontal overflow and
-crashing into the margins.
+"Education" and "Teaching history" in my own CV, are structured as tabular
+environments with the columns specified as paragraphs. This configuration allows
+for flexible management of the column widths in order to prevent horizontal
+overflow and crashing into the margins.
 * To insert publications into the document, use the `\begin{publications}` environment.
   * Each `\printbib` command will insert a subsection that contains all
   publications in that category, in chronological and descending order, and
   sorted by name within each year.
     * Sorting specifics can be modified within the [biblatex](https://ctan.org/pkg/biblatex)
     package options in the .sty file.
+  * The .sty file has options to display certain .bib entries, such as "abstract".
+  This is especially useful for academics in the economics field, as displaying the
+  abstract of your job market paper saves the search committees a lot of time when
+  reviewing your application. There are also other customisations on how your .bib
+  entries will output into the CV.
+    ```latex
+      %% Showing abstracts for biblatex entries (useful for JMCs IMO. Less useful when finished with the job market and can turn off to save space)
+      \renewbibmacro*{finentry}{
+        \setunit{\finentrypunct\par}
+        \usebibmacro{abstract}
+        \finentry
+      }
+
+      %% Making URL label for bibliography items appear in uppercase and same size as DOI font IN THE SITUATION small caps exist for the font
+      \DeclareFieldFormat{url}{{\footnotesize URL}\addcolon\space\url{#1}}
+
+      %% Shortening URLs in .bib files to display only "URL" if desired
+      % \DeclareFieldFormat{url}{\href{#1}{\mkbibacro{URL}}}
+
+      %% Remove "In:" for an article citation
+      \renewbibmacro{in:}{%
+        \ifentrytype{article}{}{
+          \printtext{\bibstring{in}\intitlepunct}
+        }
+      }
+    ```
   * The total number of publication items (e.g., refereed and working papers)
   listed inside the `publications` environment is calculated, converted into an
   integer, and displayed in the CV using the `fmtcount` package. The page
