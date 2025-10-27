@@ -269,7 +269,7 @@ overflow and crashing into the margins.
 
 Feel free to take a look at the [.tex file here](https://raw.githubusercontent.com/paultran47/latex-cv-with-biblatex/master/tran_paul_le_cv.tex),
 the [.sty file here](https://raw.githubusercontent.com/paultran47/latex-cv-with-biblatex/master/tran_paul_le_cv.sty),
-my [personal CV](https://paulletran.com/papers/wps/tran_paul_le_cv_aug25.pdf)
+my [personal CV](https://paulletran.com/papers/wps/tran_paul_le_cv.pdf)
 as an example, and the [GitHub repo](https://github.com/paultran47/latex-cv-with-biblatex)
 for the source code (also found by the buttons at the top of this website).
 
