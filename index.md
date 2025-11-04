@@ -117,10 +117,10 @@ should look similar to the following (don't mind the comments):
   \end{compactitem}
 
   \section{Dissertation Committee and References}
-  \begin{tabular}{p{4.9cm} p{5.2cm}}
-    \textbf{Olivier Coibion (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:ocoibion@austin.utexas.edu}{ocoibion@austin.utexas.edu} \newline +1 (512) 475-8537 & \textbf{Christoph Boehm (Co-Supervisor)} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:cboehm@utexas.edu}{cboehm@utexas.edu} \newline +1 (734) 548-1090\\
+  \begin{tabular}{p{5.6cm} p{6.6cm}}
+    \textbf{Olivier Coibion (Co-Supervisor)} \newline Malcolm Forsman Centennial Professor \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:ocoibion@austin.utexas.edu}{ocoibion@austin.utexas.edu} \newline +1 (512) 475-8537 & \textbf{Christoph Boehm (Co-Supervisor)} \newline Associate Professor \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:cboehm@utexas.edu}{cboehm@utexas.edu} \newline +1 (734) 548-1090\\
     &\\
-    \textbf{Saroj Bhattarai} \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:saroj.bhattarai@austin.utexas.edu}{saroj.bhattarai@austin.utexas.edu} \newline +1 (512) 475-8539 & \textbf{Amy Handlan} \newline Department of Economics \newline Brown University \newline \href{mailto:amy\_handlan@brown.edu}{amy\_handlan@brown.edu}
+    \textbf{Saroj Bhattarai} \newline Associate Professor \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:saroj.bhattarai@austin.utexas.edu}{saroj.bhattarai@austin.utexas.edu} \newline +1 (512) 475-8539 & \textbf{Amy Handlan} \newline Yang Family Assistant Professor in Economics \newline Department of Economics \newline Brown University \newline \href{mailto:amy\_handlan@brown.edu}{amy\_handlan@brown.edu}
   \end{tabular}
 
   %% Adding working papers, works in progress, and publications .bib files
