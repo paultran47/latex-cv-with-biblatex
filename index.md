@@ -131,6 +131,11 @@ should look similar to the following (don't mind the comments):
     % \printbib{wips}
   \end{publications}
 
+  \section{Presentations {\normalsize\normalfont(* denotes scheduled)}}
+  \begin{tabular}{l p{14.3cm}}
+    2025 & Texas Macro Job Candidate Conference (Oct)
+  \end{tabular}
+
   \section{Teaching History}\label{sec:teaching_history}
   \begin{compactitem}\parskip = 0cm
     \item Since Fall 2024, student evaluations have rated my teaching 4.6 out of 5 on average.
