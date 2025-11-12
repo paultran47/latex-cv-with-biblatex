@@ -131,9 +131,9 @@ should look similar to the following (don't mind the comments):
     % \printbib{wips}
   \end{publications}
 
-  \section{Presentations {\normalsize\normalfont(* denotes scheduled)}}
+  \section{Presentations {\normalsize\normalfont\texorpdfstring{($^{*}$ denotes scheduled)}{(* denotes scheduled)}}}
   \begin{tabular}{l p{14.3cm}}
-    2025 & Texas Macro Job Candidate Conference (Oct)
+    2025 & Texas Macro Job Candidate Conference (Oct), IMIM Rising Stars Seminar Series (Dec)$^{*}$
   \end{tabular}
 
   \section{Teaching History}\label{sec:teaching_history}
