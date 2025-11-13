@@ -177,6 +177,11 @@ should look similar to the following (don't mind the comments):
     2013 & \textbf{Flextronics Texas Scholarship} & Pomona College & \$1,000
   \end{tabular}
 
+  \section{Service}
+  \begin{tabular}{l p{13.8cm}}
+    External & \href{https://paulletran.com/econ-grad-app-deadlines/}{https://paulletran.com/econ-grad-app-deadlines/} Creator and Maintainer (2019--)
+  \end{tabular}
+
   \section{Miscellaneous Information}
   \begin{compactitem}\parskip = 0cm
     \item \textbf{Programming:} Matlab, Python, Bash, SAS, \href{https://en.wikipedia.org/wiki/FAME_(database)}{FAME}, (P)SQL, R, Stata, EViews, \LaTeX
