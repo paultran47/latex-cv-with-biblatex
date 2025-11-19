@@ -124,18 +124,17 @@ should look similar to the following (don't mind the comments):
   \end{tabular}
 
   %% Adding working papers, works in progress, and publications .bib files
-  %% You can include \printbib outside of the publications environment. They just won't be counted towards sumpapers (see .sty file for
-  %% definition)
+  %% You can include \printbib outside of the publications environment. They just won't be counted towards sumpapers (see .sty file for definition)
   \begin{publications}
     \printbib{wps}
     % \printbib{wips}
   \end{publications}
 
-  \section{Presentations {\normalsize\normalfont\texorpdfstring{($^{*}$ denotes scheduled)}{(* denotes scheduled)}}}
+  \section{Presentations {\normalsize\normalfont(* denotes scheduled)}}
   \begin{tabular}{l p{14.3cm}}
-    2025 & Texas Macro Job Candidate Conference (Oct), IMIM Rising Stars Seminar Series (Dec)$^{*}$
+    2025 & Texas Macro Job Candidate Conference (College Station, TX), IMIM Rising Stars Seminar Series\newline(Virtual)*
   \end{tabular}
-
+  
   \section{Teaching History}\label{sec:teaching_history}
   \begin{compactitem}\parskip = 0cm
     \item Since Fall 2024, student evaluations have rated my teaching 4.6 out of 5 on average.
