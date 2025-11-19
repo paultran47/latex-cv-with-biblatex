@@ -130,9 +130,9 @@ should look similar to the following (don't mind the comments):
     % \printbib{wips}
   \end{publications}
 
-  \section{Presentations {\normalsize\normalfont(* denotes scheduled)}}
+  \section{Presentations}
   \begin{tabular}{l p{14.3cm}}
-    2025 & Texas Macro Job Candidate Conference (College Station, TX), IMIM Rising Stars Seminar Series\newline(Virtual)*
+    2025 & Texas Macro Job Candidate Conference (College Station, TX), IMIM Rising Stars Seminar Series\newline(Scheduled, Virtual)
   \end{tabular}
   
   \section{Teaching History}\label{sec:teaching_history}
