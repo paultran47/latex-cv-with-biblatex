@@ -144,8 +144,9 @@ should look similar to the following (don't mind the comments):
   %% Putting standard vertical spacing of 1em due to compactitem and tabular environments not playing nice with each other
   \vspace{1em}
   \begin{tabular}{p{2.3cm} p{3.1cm} p{2.3cm} p{6.4cm}}
-    University of \newline Texas at Austin & \textbf{Assistant Instructor} & Fall 2024-- & Introduction to Macroeconomics\\
-    & \textbf{Teaching Assistant} & Spring 2024 & Macro and the Labor Market \newline (MA course), Andreas Mueller\\
+    University of \newline Texas at Austin & \textbf{Assistant Instructor} & Fall 2024--2025 & Introduction to Macroeconomics\\
+    & \textbf{Teaching Assistant} & Spring 2026 & Time Series Econometrics, Sahil Ravgotra\\
+    & & Spring 2024 & Macro and the Labor Market \newline (MA course), Andreas Mueller\\
     & & & Labor Economics\newline (MA course), Gerald Oettinger\\
     & & Fall 2021--2023 & Introduction to Microeconomics \newline (Synchronous Massive Online Course \newline for fall), Charity-Joy Acchiardo, \newline Wayne Geerling, Dirk Mateer\\
     & & Summer 2022 & Health Economics, Helen Schneider\\
