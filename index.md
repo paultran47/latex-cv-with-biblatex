@@ -132,6 +132,7 @@ should look similar to the following (don't mind the comments):
 
   \section{Presentations}
   \begin{tabular}{l p{14.3cm}}
+    2026 & US Department of the Treasury (Scheduled, Washington, DC)\\
     2025 & Texas Macro Job Candidate Conference (College Station, TX), IMIM Rising Stars Seminar Series \newline (Virtual)
   \end{tabular}
   
