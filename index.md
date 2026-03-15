@@ -133,7 +133,7 @@ should look similar to the following (don't mind the comments):
 
   \section{Presentations}
   \begin{tabular}{l p{14.3cm}}
-    2026 & US Department of the Treasury (Washington, DC), Texas State University (San Marcos, TX), \newline Loyola University Chicago (Scheduled, Chicago, IL)\\
+    2026 & US Department of the Treasury (Washington, DC), Texas State University (San Marcos, TX), \newline Loyola University Chicago (Chicago, IL)\\
     2025 & Texas Macro Job Candidate Conference (College Station, TX), IMIM Rising Stars Seminar Series \newline (Virtual)
   \end{tabular}
   
