@@ -4,7 +4,7 @@
 
 %% LaTeX-style CV with biblatex package usage
 %% Paul L. Tran
-%% Last updated: 19 Mar, 2026
+%% Last updated: 02 Apr, 2026
 %=================================================
 
 %=================================================
@@ -57,12 +57,29 @@
 \begin{document}
   \maketitle
   \thispagestyle{firststyle}
+  \section{Current Positions}
+  \begin{tabular}{lll}
+    2026-- & \textbf{Economist} (Incoming) & US Department of the Treasury\\
+  \end{tabular}
+  
+  \section{Previous Positions}
+  \begin{compactitem}\parskip = 0cm
+    \item Please see the {\hypersetup{linkcolor = black}\hyperref[sec:teaching_history]{``Teaching history''}} section for details about my teaching employment and experience.
+  \end{compactitem}
+  %% Putting standard vertical spacing of 1em due to compactitem and tabular environments not playing nice with each other
+  \vspace{1em}
+  \begin{tabular}{lll}
+    2018--2020 & \textbf{Senior Research Assistant} & Board of Governors of the Federal Reserve System\\
+    2017--2018 & \textbf{Research Assistant} & Board of Governors of the Federal Reserve System
+  \end{tabular}
+  
   \section{Education}
   \begin{tabular}{p{4cm} p{2.5cm} p{3.6cm} p{4.1cm}}
     2020--May 2026 (Expected) & \textbf{PhD} & Economics & University of Texas at Austin
   \end{tabular}
   \begin{compactitem}
     \item Dissertation: ``Essays on Applications of Text Analysis in Macroeconomics''
+    \item Committee: Olivier Coibion (Co-Supervisor), Christoph E. Boehm (Co-Supervisor), Saroj Bhattarai, Amy Handlan
   \end{compactitem}
   %% Putting standard vertical spacing of 1em due to compactitem and tabular environments not playing nice with each other
   \vspace{1em}
@@ -79,13 +96,6 @@
     %% calculation of sumpapers (see .sty file for definition).
     % \item I have authored or co-authored \numberstringnum{\getrefnumber{sumpapers}} publications on economic topics. A list of these appear below.
   \end{compactitem}
-
-  \section{Dissertation Committee and References}
-  \begin{tabular}{p{5.6cm} p{6.6cm}}
-    \textbf{Olivier Coibion (Co-Supervisor)} \newline Malcolm Forsman Centennial Professor \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:ocoibion@austin.utexas.edu}{ocoibion@austin.utexas.edu} \newline +1 (512) 475-8537 & \textbf{Christoph Boehm (Co-Supervisor)} \newline Associate Professor \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:cboehm@utexas.edu}{cboehm@utexas.edu} \newline +1 (734) 548-1090\\
-    &\\
-    \textbf{Saroj Bhattarai} \newline Associate Professor \newline Department of Economics \newline University of Texas at Austin \newline \href{mailto:saroj.bhattarai@austin.utexas.edu}{saroj.bhattarai@austin.utexas.edu} \newline +1 (512) 475-8539 & \textbf{Amy Handlan} \newline Yang Family Assistant Professor in Economics \newline Department of Economics \newline Brown University \newline \href{mailto:amy\_handlan@brown.edu}{amy\_handlan@brown.edu}
-  \end{tabular}
 
   %% Adding working papers, works in progress, and publications .bib files
   %% You can include \printbib outside of the publications environment. They just won't be counted towards sumpapers (see .sty file for definition)
@@ -116,17 +126,6 @@
     & & Fall 2021--2023 & Introduction to Microeconomics \newline (Synchronous Massive Online Course \newline for fall), Charity-Joy Acchiardo, \newline Wayne Geerling, Dirk Mateer\\
     & & Summer 2022 & Health Economics, Helen Schneider\\
     & & Fall 2020, \newline Spring 2021 & Introduction to Macroeconomics, \newline Michael Sadler, Charity-Joy Acchiardo
-  \end{tabular}
-
-  \section{Other Employment History}
-  \begin{compactitem}\parskip = 0cm
-    \item Please see the {\hypersetup{linkcolor = black}\hyperref[sec:teaching_history]{``Teaching history''}} section for details about my teaching employment and experience.
-  \end{compactitem}
-  %% Putting standard vertical spacing of 1em due to compactitem and tabular environments not playing nice with each other
-  \vspace{1em}
-  \begin{tabular}{lll}
-    2018--2020 & \textbf{Senior Research Assistant} & Board of Governors of the Federal Reserve System\\
-    2017--2018 & \textbf{Research Assistant} & Board of Governors of the Federal Reserve System
   \end{tabular}
 
   \section{Honours and Awards}
