@@ -16,10 +16,11 @@ this very reason that I've created a CV entirely in LaTeX. To further tailor
 this for academics, the CV has integration with the awesome [biblatex package](https://ctan.org/pkg/biblatex)
 to easily update and maintain publications of all kinds.
 
-Please note that because I'm PhD applied macroeconomist at the US Department of
-the Treasury (incoming), the files for this CV are customised for an economist
-that is going on the job market for academia or policy institutions in mind. As
-such, some code and conventions might not be relevant for your own research needs!
+Please note that because I am an Economist at the US Department of the Treasury
+(incoming) and received my PhD in Economics from the University of Texas at
+Austin in 2026, the files for this CV are customised for an economist that is
+going on the job market for academia or policy institutions in mind. As such,
+some code and conventions might not be relevant for your own research needs!
 
 ## Prerequisites
 
