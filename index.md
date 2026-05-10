@@ -112,8 +112,8 @@ should look similar to the following (don't mind the comments):
   \end{tabular}
   
   \section{Education}
-  \begin{tabular}{p{4cm} p{2.5cm} p{3.6cm} p{4.1cm}}
-    2020--May 2026 (Expected) & \textbf{PhD} & Economics & University of Texas at Austin
+  \begin{tabular}{p{0.7cm} p{2.2cm} p{3.6cm} p{4.1cm}}
+    2026 & \textbf{PhD} & Economics & University of Texas at Austin
   \end{tabular}
   \begin{compactitem}
     \item Dissertation: ``Essays on Applications of Text Analysis in Macroeconomics''
@@ -121,7 +121,7 @@ should look similar to the following (don't mind the comments):
   \end{compactitem}
   %% Putting standard vertical spacing of 1em due to compactitem and tabular environments not playing nice with each other
   \vspace{1em}
-  \begin{tabular}{p{4cm} p{2.5cm} p{3.6cm} p{4.1cm}}
+  \begin{tabular}{p{0.7cm} p{2.2cm} p{3.6cm} p{4.1cm}}
     2023 & \textbf{MS en Passant} & Economics & University of Texas at Austin\\
     2017 & \textbf{BA} & Mathematics, \newline Mathematical Economics & Pomona College
   \end{tabular}
@@ -168,7 +168,8 @@ should look similar to the following (don't mind the comments):
 
   \section{Honours and Awards}
   \begin{tabular}{p{1.6cm} p{6.2cm} p{4.2cm} p{0.95cm}}
-    2020-- & \textbf{Graduate Teaching Fellowship} & University of Texas at Austin &\\
+    2020--2026 & \textbf{Graduate Teaching Fellowship} & University of Texas at Austin &\\
+    2026 & \textbf{Professional Development Award} & University of Texas at Austin & \$500\\
     2025 & \textbf{PhD Summer Research Fellowship} & University of Texas at Austin & \$5,000\\
     2025 & \textbf{Empirical Macro Economics Policy \newline Center of Texas Dissertation Funding} & University of Texas at Austin & \$1,919\\
     2024 & \textbf{PhD Summer Research Fellowship} & University of Texas at Austin & \$5,000\\
