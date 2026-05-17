@@ -144,7 +144,7 @@ should look similar to the following (don't mind the comments):
 
   \section{Presentations}
   \begin{tabular}{l p{14.3cm}}
-    2026 & US Department of the Treasury (Washington, DC), Texas State University (San Marcos, TX), \newline Loyola University Chicago (Chicago, IL), Spring Midwest Macroeconomics Meeting (Scheduled, \newline Milwaukee, WI), North American Summer Meetings of Econometric Society (Scheduled, Emory \newline University, GA), European Economic Association Meeting (Scheduled, University College Dublin, \newline Ireland)\\
+    2026 & US Department of the Treasury (Washington, DC), Texas State University (San Marcos, TX), \newline Loyola University Chicago (Chicago, IL), Spring Midwest Macroeconomics Meeting (Milwaukee, \newline WI), North American Summer Meetings of Econometric Society (Scheduled, Emory University, \newline GA), European Economic Association Meeting (Scheduled, University College Dublin, Ireland)\\
     2025 & Texas Macro Job Candidate Conference (College Station, TX), IMIM Rising Stars Seminar Series \newline (Virtual)
   \end{tabular}
   
