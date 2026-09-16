@@ -56,10 +56,11 @@ should look similar to the following (don't mind the comments):
 
 %% Entering in name and information
 \name{Paul L. Tran}
-\info{Office: & Office of Macroeconomic Analysis,\\
-  & Office of Economic Policy,\\
-  & US Department of the Treasury,\\
-  & 1500 Pennsylvania Ave, NW,\\
+\info{Office: & Office of Macroeconomic Analysis\\
+  & Office of Economic Policy\\
+  & US Department of the Treasury\\
+  & 1500 Pennsylvania Ave, NW\\
+  & MT 2.2458D\\
   & Washington, DC 20220\\
   \textbf{Citizenship}: & \textbf{United States of America}\\
   Cell: & +1 (512) 704-3025\\
