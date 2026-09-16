@@ -1,0 +1,250 @@
+%=================================================
+%% 2 percentage signs represent comments for code;
+% 1 percentage sign represents commented out code
+
+%% LaTeX-style CV with biblatex package usage
+%% Paul L. Tran
+%% Last updated: 16 Sep, 2026
+%=================================================
+
+%=================================================
+%% Loading packages
+\usepackage{newtxtext}
+\usepackage[T1]{fontenc}
+\usepackage[margin = 1in]{geometry}
+\usepackage{ragged2e}
+\usepackage{fancyhdr}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hyphens]{url}
+\usepackage[colorlinks = true]{hyperref}
+\usepackage{booktabs}
+\usepackage{fmtcount}
+\usepackage{refcount}
+\usepackage{datetime}
+\usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage{paralist}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage[
+  % sorting = nyt,
+  sorting = none,
+  citestyle = authoryear,
+  bibstyle = authoryear-comp,
+  defernumbers = true,
+  maxnames = 20,
+  giveninits = false,
+  bibencoding = utf8,
+  terseinits = true,
+  uniquename = init,
+  dashed = false,
+  doi = true,
+  isbn = false,
+  natbib = true,
+  backend = biber,
+  date = year
+]{biblatex}
+
+%% Making all links blue by default
+\AtBeginDocument{
+  \hypersetup{
+    allcolors = Blue,
+  }
+}
+
+%% Define ragged right columns within tables
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+%% Colour of headings
+\def\headcolor{\color[rgb]{0, 0, 0}}
+
+\RaggedRight
+\sloppy
+
+%% Header and footer of first page
+\fancypagestyle{firststyle}{
+  \fancyhf{}
+  \cfoot{\thepage \ of {\hypersetup{linkcolor = black}\pageref{LastPage}}}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+%% Header and footer of every page after first page
+\pagestyle{fancy}
+\lhead{
+  \textcolor[gray]{0.4}{
+    \textbf{\@name \ (CV, \monthyeardate\today, he/him/his)}
+  }
+}
+\rhead{
+  \textcolor[gray]{0.4}{
+    \thepage \ of {\hypersetup{linkcolor = black}\pageref{LastPage}}
+  }
+}
+\cfoot{}
+\def\headrule{{\color[gray]{0.4}\hrule\@height\headrulewidth\@width\headwidth \vskip-\headrulewidth}}
+
+%% Format date to be Month YYYY
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+
+%% Creating header box
+\def\name#1{\def\@name{#1}}
+\def\info#1{\def\@info{#1}}
+\newcommand{\shadebox}[3][.9]{\fcolorbox[gray]{0}{#1}{\parbox{#2}{#3}}}
+\def\maketitle{
+  \thispagestyle{plain}
+  \shadebox[0.9]{6in}{
+    \headcolor\hfil
+    \hbox to 15cm{
+      \begin{tabular}{p{6.9cm}}
+        \LARGE\textbf{\@name}\\
+        \normalsize \textbf{(he/him/his)}\\\\
+        \normalsize \textbf{Curriculum Vitae (CV)}\\
+        \normalsize Last updated: \monthyeardate\today\\
+        {\normalsize\href{https://paulletran.com/cv/tran_paul_le_cv.pdf}{[Click here for the latest version]}}\\
+      \end{tabular}
+      \hfill\hbox{\fontsize{10}{12}
+    
+      \begin{tabular}{@{} r p{5cm} @{}}
+        \@info
+      \end{tabular}}
+    }
+    \hfil
+  }
+  \vspace*{0.2cm}
+}
+
+%% Creating section headings
+\titlelabel{}
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titleformat*{\section}{\headcolor\large\scshape}
+\titlespacing{\subsection}{0pt}{1ex}{0.5ex}
+
+%% Setting up parskip distance
+\setlength{\parskip}{-0.5ex}
+
+%% Setting penalty against widow lines
+\clubpenalty = 10000
+\widowpenalty = 10000
+
+%% Formatting bibliography
+\DeclareFieldFormat{url}{\url{#1}}
+\DeclareFieldFormat[article]{pages}{#1}
+\DeclareFieldFormat[inproceedings]{pages}{\lowercase{pp.}#1}
+\DeclareFieldFormat[incollection]{pages}{\lowercase{pp.}#1}
+\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+\DeclareFieldFormat[article]{title}{\MakeCapital{#1}}
+\DeclareFieldFormat[article]{url}{}
+\DeclareFieldFormat[inproceedings]{title}{#1}
+\DeclareFieldFormat{shorthandwidth}{#1}
+\DeclareFieldFormat{extradate}{}
+
+%% Showing abstracts for biblatex entries (useful for JMCs IMO. Less useful when finished with the job market and can turn off to save space)
+\renewbibmacro*{finentry}{
+  \setunit{\finentrypunct\par}
+  \usebibmacro{abstract}
+  \finentry
+}
+
+%% Making URL the same font as text, not courier default
+\urlstyle{same}
+\newcommand{\doi}[1]{\url{#1}}
+
+%% Making URL label for bibliography items appear in uppercase and same size as DOI font IN THE SITUATION small caps exist for the font
+\DeclareFieldFormat{url}{{\footnotesize URL}\addcolon\space\url{#1}}
+
+%% Shortening URLs in .bib files to display only "URL" if desired
+% \DeclareFieldFormat{url}{\href{#1}{\mkbibacro{URL}}}
+
+%% Remove "In:" for an article citation
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{
+    \printtext{\bibstring{in}\intitlepunct}
+  }
+}
+
+%% Creating bibliography categories
+\def\makebibcategory#1#2{
+  \DeclareBibliographyCategory{#1}
+  \defbibheading{#1}{\section*{#2}}
+}
+\makebibcategory{books}{Books}
+\makebibcategory{papers}{Refereed research papers}
+\makebibcategory{chapters}{Book chapters}
+\makebibcategory{conferences}{Papers in conference proceedings}
+\makebibcategory{bookreviews}{Book reviews}
+\makebibcategory{editorials}{Editorials}
+\makebibcategory{phd}{Dissertation}
+\makebibcategory{subpapers}{Submitted papers}
+\makebibcategory{wps}{Working papers}
+\makebibcategory{wips}{Works in progress}
+\setlength{\bibitemsep}{2.3pt}
+\setlength{\bibhang}{.9cm}
+
+%% Creating a counter named pubitems that keeps track of how many items are in each bibliography category put into the publications
+%% environment (defined further down). For every category, the first item is labelled and assigned the value of 1.
+\renewcommand*{\bibitem}{
+  \addtocounter{pubitems}{1}
+  \item \mbox{}\hskip-0.9cm\hbox to 0.7cm{\hfill\arabic{pubitems}.~\,}
+}
+\defbibenvironment{bibliography}
+{\list{}
+  {
+    \setlength{\leftmargin}{\bibhang}%
+    \setlength{\itemsep}{\bibitemsep}%
+    \setlength{\parsep}{\bibparsep}
+  }
+}
+{\endlist}
+{\bibitem}
+
+%% Creating publications environment
+\newenvironment{publications}{
+  %% Creating label for the beginning of the publications environment for \pageref usage
+  \label{pubitemsstart}
+  \vspace*{0cm}
+  \titlespacing{\section}{0pt}{1.5ex}{1ex}\itemsep = 0.00cm
+}{
+  %% Creating label for the end of the publications environment for \pageref usage
+  \label{pubitemsend}
+  \addtocounter{sumpapers}{-1}
+  \refstepcounter{sumpapers}
+  \label{sumpapers}
+}
+\def\printbib#1{
+  \printbibliography[category = #1, heading = #1]\lastref{sumpapers}
+}
+
+%% Counting total number of items included in the publications environment
+%% Sumpapers will naturally count everything contained inside of the publications environment. However, if you include categories
+%% inside of the environment that you don't want to be included into the sumpapers value, the following comments provide guidance on
+%% how to adjust the variable to display the value you want. As a reminder, .bib items added after and outside of the publications
+%% environment do not get added into the total value of sumpapers.
+%% Initialising the counter for pubitems to be 0.
+\newcounter{pubitems}\setcounter{pubitems}{0}
+
+%% Initialising the counter for total value sumpapers to be 0.
+%% If you want to remove x publication items from being included in the total value of sumpapers, simply replace 0 with -x.
+\newcounter{sumpapers}\setcounter{sumpapers}{0}
+
+%% Defining sumpapers to be the sum of the sub-totals of pubitems in every category listed inside of the publications environment.
+\def\lastref#1{
+  \addtocounter{#1}{
+    \value{pubitems}
+  }
+  \setcounter{pubitems}{0}
+}
+
+%% Add all papers in the bib files
+\nocite{*}
+
+%% Code for sorting separate bibliography environment by paper title and year rather than author name if desired
+\DeclareSortingTemplate{title_year}{
+  \sort{
+    \field{title}
+  }
+  \sort{
+    \field{year}
+  }
+}
+%=================================================
