@@ -17,10 +17,10 @@ this for academics, the CV has integration with the awesome [biblatex package](h
 to easily update and maintain publications of all kinds.
 
 Please note that because I am an Economist at the US Department of the Treasury
-(incoming) and received my PhD in Economics from the University of Texas at
-Austin in 2026, the files for this CV are customised for an economist that is
-going on the job market for academia or policy institutions in mind. As such,
-some code and conventions might not be relevant for your own research needs!
+and received my PhD in Economics from the University of Texas at Austin in 2026,
+the files for this CV are customised for an economist that is going on the job
+market for academia or policy institutions in mind. As such, some code and
+conventions might not be relevant for your own research needs!
 
 ## Prerequisites
 
@@ -56,12 +56,11 @@ should look similar to the following (don't mind the comments):
 
 %% Entering in name and information
 \name{Paul L. Tran}
-\info{Office: & \href{https://liberalarts.utexas.edu/economics/ph-d-program/}{Department of Economics},\\
-  & College of Liberal Arts,\\
-  & University of Texas at Austin,\\
-  & 2225 Speedway,\\
-  & BRB 2.128, C3100,\\
-  & Austin, Texas 78712\\
+\info{Office: & Office of Macroeconomic Analysis,\\
+  & Office of Economic Policy,\\
+  & US Department of the Treasury,\\
+  & 1500 Pennsylvania Ave, NW,\\
+  & Washington, DC 20220\\
   \textbf{Citizenship}: & \textbf{United States of America}\\
   Cell: & +1 (512) 704-3025\\
   Email: & \href{mailto:pltran@utexas.edu}{pltran@utexas.edu}\\
@@ -97,7 +96,7 @@ should look similar to the following (don't mind the comments):
   \thispagestyle{firststyle}
   \section{Current Positions}
   \begin{tabular}{lll}
-    2026-- & \textbf{Economist} (Incoming) & US Department of the Treasury\\
+    2026-- & \textbf{Economist} & US Department of the Treasury\\
   \end{tabular}
   
   \section{Previous Positions}
@@ -144,7 +143,7 @@ should look similar to the following (don't mind the comments):
 
   \section{Presentations}
   \begin{tabular}{l p{14.3cm}}
-    2026 & US Department of the Treasury (Washington, DC), Texas State University (San Marcos, TX), \newline Loyola University Chicago (Chicago, IL), Spring Midwest Macroeconomics Meeting (Milwaukee, \newline WI), North American Summer Meetings of Econometric Society (Emory University, GA), \newline European Economic Association Meeting (Scheduled, University College Dublin, Ireland)\\
+    2026 & US Department of the Treasury (Washington, DC), Texas State University (San Marcos, TX), \newline Loyola University Chicago (Chicago, IL), Spring Midwest Macroeconomics Meeting (Milwaukee, \newline WI), North American Summer Meetings of Econometric Society (Emory University, GA), \newline European Economic Association Meeting (University College Dublin, Ireland), Second Conference \newline on Applied Macroeconomics (Scheduled, Bank of Italy, Rome)\\
     2025 & Texas Macro Job Candidate Conference (College Station, TX), IMIM Rising Stars Seminar Series \newline (Virtual)
   \end{tabular}
   
@@ -166,6 +165,12 @@ should look similar to the following (don't mind the comments):
     & & Fall 2020, \newline Spring 2021 & Introduction to Macroeconomics, \newline Michael Sadler, Charity-Joy Acchiardo
   \end{tabular}
 
+  \section{Service}
+  \begin{tabular}{l p{13.8cm}}
+    Referee & Journal of Economic Dynamics and Control\\
+    External & \href{https://paulletran.com/econ-grad-app-deadlines/}{https://paulletran.com/econ-grad-app-deadlines/} Creator and Maintainer (2019--)\\
+  \end{tabular}
+
   \section{Honours and Awards}
   \begin{tabular}{p{1.6cm} p{6.2cm} p{4.2cm} p{0.95cm}}
     2020--2026 & \textbf{Graduate Teaching Fellowship} & University of Texas at Austin &\\
@@ -178,11 +183,6 @@ should look similar to the following (don't mind the comments):
     2016 & \textbf{Harry G. Steele Scholarship} & Pomona College & \$4,000\\
     2014--2015 & \textbf{Pomona College Scholar} & Pomona College &\\
     2013 & \textbf{Flextronics Texas Scholarship} & Pomona College & \$1,000
-  \end{tabular}
-
-  \section{Service}
-  \begin{tabular}{l p{13.8cm}}
-    External & \href{https://paulletran.com/econ-grad-app-deadlines/}{https://paulletran.com/econ-grad-app-deadlines/} Creator and Maintainer (2019--)
   \end{tabular}
 
   \section{Miscellaneous Information}
