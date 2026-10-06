@@ -57,7 +57,6 @@ should look similar to the following (don't mind the comments):
 %% Entering in name and information
 \name{Paul L. Tran}
 \info{Office: & Office of Macroeconomic Analysis\\
-  & Office of Economic Policy\\
   & US Department of the Treasury\\
   & 1500 Pennsylvania Ave, NW\\
   & MT 2.2458D\\
@@ -65,6 +64,7 @@ should look similar to the following (don't mind the comments):
   \textbf{Citizenship}: & \textbf{United States of America}\\
   Cell: & +1 (512) 704-3025\\
   Email: & \href{mailto:pltran@utexas.edu}{pltran@utexas.edu}\\
+  & \href{mailto:paul.tran@treasury.gov}{paul.tran@treasury.gov}\\
   Website: & \href{https://paulletran.com/}{https://paulletran.com/}
 }
 %=================================================
